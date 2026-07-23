@@ -1002,7 +1002,7 @@ nav.site-nav {
     transition: opacity 0.25s var(--ease-out), transform 0.3s var(--ease-out), filter 0.3s;
     transform-origin: 260px 260px;
 }
-.donut-sector text {
+.donut-sector text { font-size: 25px;
     font-family: var(--font-serif-kr); font-size: 24px; font-weight: 800;
     text-anchor: middle; letter-spacing: -0.02em; pointer-events: none;
 }
@@ -1024,7 +1024,7 @@ nav.site-nav {
 }
 .fields-grid a:hover { border-color: var(--gold); background: var(--champagne); }
 @media (max-width: 640px) {
-    .donut-sector text { font-size: 26px; }
+    .donut-sector text { font-size: 25px; font-size: 26px; }
     .fields-grid { display: grid; }
 }
 
@@ -1335,7 +1335,7 @@ nav.site-nav {
     background:
         radial-gradient(ellipse 900px 340px at 18% 0%, rgba(46,84,151,0.28) 0%, rgba(46,84,151,0) 60%),
         linear-gradient(180deg, #13294E 0%, #0C1B38 100%);
-    padding: 4rem 2rem 2.5rem;
+    padding: 2.25rem 2rem 1.5rem;
     overflow: hidden;
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
 }
@@ -1356,8 +1356,8 @@ nav.site-nav {
 }
 .footer-inner { max-width: 1280px; margin: 0 auto; position: relative; z-index: 1; text-align: center; }
 .footer-mark-seal {
-    width: 56px; height: 56px;
-    display: block; margin: 0 auto 1.25rem;
+    width: 48px; height: 48px;
+    display: block; margin: 0 auto 0.875rem;
     filter: drop-shadow(0 4px 12px rgba(0,0,0,0.35));
 }
 .footer-mark-seal svg { width: 100%; height: 100%; display: block; }
@@ -1365,11 +1365,11 @@ nav.site-nav {
     display: block;
     font-family: var(--font-serif-kr); font-size: 1.5rem; font-weight: 800;
     color: rgba(255,255,255,0.96); letter-spacing: -0.02em;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 .footer-info {
     font-family: var(--font-sans); font-size: 0.875rem; font-weight: 400;
-    color: rgba(255,255,255,0.72); line-height: 2;
+    color: rgba(255,255,255,0.72); line-height: 1.85;
 }
 .footer-info a {
     color: inherit; text-decoration: none;
@@ -1381,7 +1381,7 @@ nav.site-nav {
     position: relative;
     width: 80px; height: 1px;
     background: linear-gradient(90deg, transparent, rgba(201,175,116,0.5), transparent);
-    margin: 2.25rem auto;
+    margin: 1.125rem auto;
 }
 .footer-divider::before, .footer-divider::after {
     content: '';
@@ -1398,14 +1398,14 @@ nav.site-nav {
     display: inline-flex; align-items: center;
     background: #FFFFFF;
     border-radius: 10px;
-    padding: 0.8125rem 1.5rem;
-    margin-bottom: 2rem;
+    padding: 0.625rem 1.25rem;
+    margin-bottom: 1.125rem;
     text-decoration: none;
     box-shadow: 0 6px 18px rgba(0,0,0,0.28);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .footer-partner:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,0.34); }
-.footer-partner svg { display: block; height: 44px; width: auto; }
+.footer-partner svg { display: block; height: 38px; width: auto; }
 
 .footer-bottom {
     font-family: var(--font-sans); font-size: 0.8125rem;
@@ -1514,28 +1514,36 @@ nav.site-nav {
         <div class="donut-wrap">
             <svg viewBox="0 0 520 520" class="donut-menu" role="navigation" aria-label="보상 분야 메뉴">
             <a href="#land" class="donut-sector" aria-label="토지보상 안내 보기">
-                <path d="M 263.0,42.0 A 218,218 0 0 1 447.3,148.4 L 352.8,204.7 A 108,108 0 0 0 261.5,152.0 Z" fill="#193666"/>
-                <text x="342" y="119" fill="#FFFFFF"><tspan x="342" dy="-0.55em">토지</tspan><tspan x="342" dy="1.2em">보상</tspan></text>
+                <path d="M 263.4,42.0 A 218,218 0 0 1 411.7,103.4 L 335.2,182.4 A 108,108 0 0 0 261.7,152.0 Z" fill="#193666"/>
+                <text x="322" y="109" fill="#FFFFFF"><tspan x="322" dy="0.32em">토지</tspan></text>
             </a>
             <a href="#structures" class="donut-sector" aria-label="지장물보상 안내 보기">
-                <path d="M 450.3,153.6 A 218,218 0 0 1 450.3,366.4 L 354.3,312.7 A 108,108 0 0 0 354.3,207.3 Z" fill="#A7B6CC"/>
-                <text x="423" y="260" fill="#1B2B4A"><tspan x="423" dy="-0.55em">지장물</tspan><tspan x="423" dy="1.2em">보상</tspan></text>
+                <path d="M 416.6,108.3 A 218,218 0 0 1 478.0,256.6 L 368.0,258.3 A 108,108 0 0 0 337.6,184.8 Z" fill="#A7B6CC"/>
+                <text x="411" y="198" fill="#1B2B4A"><tspan x="411" dy="0.32em">지장물</tspan></text>
             </a>
             <a href="#business" class="donut-sector" aria-label="영업보상 안내 보기">
-                <path d="M 447.3,371.6 A 218,218 0 0 1 263.0,478.0 L 261.5,368.0 A 108,108 0 0 0 352.8,315.3 Z" fill="#EBE1C9"/>
-                <text x="342" y="401" fill="#1B2B4A"><tspan x="342" dy="-0.55em">영업</tspan><tspan x="342" dy="1.2em">보상</tspan></text>
+                <path d="M 478.0,263.4 A 218,218 0 0 1 416.6,411.7 L 337.6,335.2 A 108,108 0 0 0 368.0,261.7 Z" fill="#EBE1C9"/>
+                <text x="411" y="322" fill="#1B2B4A"><tspan x="411" dy="0.32em">영업</tspan></text>
             </a>
-            <a href="#relocation" class="donut-sector" aria-label="이주·생활대책 안내 보기">
-                <path d="M 257.0,478.0 A 218,218 0 0 1 72.7,371.6 L 167.2,315.3 A 108,108 0 0 0 258.5,368.0 Z" fill="#193666"/>
-                <text x="179" y="401" fill="#FFFFFF"><tspan x="179" dy="-0.55em">이주·생활</tspan><tspan x="179" dy="1.2em">대책</tspan></text>
+            <a href="#relocation" class="donut-sector" aria-label="이주대책 안내 보기">
+                <path d="M 411.7,416.6 A 218,218 0 0 1 263.4,478.0 L 261.7,368.0 A 108,108 0 0 0 335.2,337.6 Z" fill="#193666"/>
+                <text x="322" y="411" fill="#FFFFFF"><tspan x="322" dy="-0.28em">이주</tspan><tspan x="322" dy="1.15em">대책</tspan></text>
             </a>
-            <a href="#daeto" class="donut-sector" aria-label="협의양도·대토 안내 보기">
-                <path d="M 69.7,366.4 A 218,218 0 0 1 69.7,153.6 L 165.7,207.3 A 108,108 0 0 0 165.7,312.7 Z" fill="#A7B6CC"/>
-                <text x="97" y="260" fill="#1B2B4A"><tspan x="97" dy="-0.55em">협의양도</tspan><tspan x="97" dy="1.2em">·대토</tspan></text>
+            <a href="#living" class="donut-sector" aria-label="생활대책 안내 보기">
+                <path d="M 256.6,478.0 A 218,218 0 0 1 108.3,416.6 L 184.8,337.6 A 108,108 0 0 0 258.3,368.0 Z" fill="#A7B6CC"/>
+                <text x="198" y="411" fill="#1B2B4A"><tspan x="198" dy="-0.28em">생활</tspan><tspan x="198" dy="1.15em">대책</tspan></text>
+            </a>
+            <a href="#hyupyang" class="donut-sector" aria-label="협의양도인 안내 보기">
+                <path d="M 103.4,411.7 A 218,218 0 0 1 42.0,263.4 L 152.0,261.7 A 108,108 0 0 0 182.4,335.2 Z" fill="#EBE1C9"/>
+                <text x="109" y="322" fill="#1B2B4A"><tspan x="109" dy="-0.28em">협의</tspan><tspan x="109" dy="1.15em">양도인</tspan></text>
+            </a>
+            <a href="#daeto" class="donut-sector" aria-label="대토 안내 보기">
+                <path d="M 42.0,256.6 A 218,218 0 0 1 103.4,108.3 L 182.4,184.8 A 108,108 0 0 0 152.0,258.3 Z" fill="#193666"/>
+                <text x="109" y="198" fill="#FFFFFF"><tspan x="109" dy="0.32em">대토</tspan></text>
             </a>
             <a href="#etc" class="donut-sector" aria-label="기타보상 안내 보기">
-                <path d="M 72.7,148.4 A 218,218 0 0 1 257.0,42.0 L 258.5,152.0 A 108,108 0 0 0 167.2,204.7 Z" fill="#EBE1C9"/>
-                <text x="178" y="119" fill="#1B2B4A"><tspan x="178" dy="-0.55em">기타</tspan><tspan x="178" dy="1.2em">보상</tspan></text>
+                <path d="M 108.3,103.4 A 218,218 0 0 1 256.6,42.0 L 258.3,152.0 A 108,108 0 0 0 184.8,182.4 Z" fill="#A7B6CC"/>
+                <text x="198" y="109" fill="#1B2B4A"><tspan x="198" dy="0.32em">기타</tspan></text>
             </a>
                 <circle cx="260" cy="260" r="96" fill="#FFFFFF"/>
                 <circle cx="260" cy="260" r="96" fill="none" stroke="#CBB57F" stroke-width="1.5"/>
@@ -1546,8 +1554,10 @@ nav.site-nav {
                 <li><a href="#land">토지 보상</a></li>
                 <li><a href="#structures">지장물 보상</a></li>
                 <li><a href="#business">영업 보상</a></li>
-                <li><a href="#relocation">이주·생활 대책</a></li>
-                <li><a href="#daeto">협의양도·대토</a></li>
+                <li><a href="#relocation">이주대책</a></li>
+                <li><a href="#living">생활대책</a></li>
+                <li><a href="#hyupyang">협의양도인</a></li>
+                <li><a href="#daeto">대토</a></li>
                 <li><a href="#etc">기타 보상</a></li>
             </ul>
         </div>
@@ -1612,16 +1622,44 @@ nav.site-nav {
             <svg class="field-art" viewBox="0 0 90 80" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 70 L85 70" stroke="#A0813E" stroke-width="2"/><path d="M20 70 L20 46 L38 32 L56 46 L56 70" stroke="#193666" stroke-width="1.6"/><path d="M33 70 L33 58 L43 58 L43 70" stroke="#193666" stroke-width="1.6"/><path d="M62 70 C70 62 74 52 82 46" stroke="#A0813E" stroke-width="1.6" stroke-dasharray="4 5"/></svg>
             <div class="field-head">
                 <div>
-                    <span class="field-num">4.</span><h2 class="field-name">이주·생활 대책</h2>
-                    <p class="field-tagline">삶의 터전을 옮기는 분들을 위한 제도</p>
+                    <span class="field-num">4.</span><h2 class="field-name">이주대책</h2>
+                    <p class="field-tagline">거주지 이전에 대한 대책</p>
                 </div>
             </div>
-            <p class="field-desc">보상금 외에도 <strong>이주자택지·이주정착금·주거이전비</strong> 등의 제도가 있습니다.<br>요건 검토는 빠를수록 유리합니다.</p>
+            <p class="field-desc">살던 집을 내주는 분께는 <strong>이주자택지·이주정착금·이사비</strong> 등의 제도가 있습니다.<br>기준일 이전의 적법한 거주가 핵심 요건입니다.</p>
             <ul class="field-items">
-                <li>이주자택지 공급 대상 요건 검토</li>
-                <li>이주정착금·주거이전비·이사비 확인</li>
-                <li>생활대책(상가용지 등) 대상 검토</li>
-                <li>기준일·거주 요건 입증 자료 준비</li>
+                <li>기준일 이전 적법 가옥 거주 입증</li>
+                <li>이주자택지·이주정착금·이사비 대상자 확인</li>
+            </ul>
+        </article>
+
+        <article class="field-block" id="living">
+            <svg class="field-art" viewBox="0 0 90 80" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 70 L85 70" stroke="#A0813E" stroke-width="2"/><path d="M22 70 L22 44 L68 44 L68 70" stroke="#193666" stroke-width="1.6"/><path d="M18 44 L26 32 L64 32 L72 44 M18 44 L72 44" stroke="#A0813E" stroke-width="1.6"/><path d="M30 70 L30 56 L42 56 L42 70" stroke="#193666" stroke-width="1.6"/><rect x="50" y="52" width="12" height="10" rx="1" stroke="#193666" stroke-width="1.6"/></svg>
+            <div class="field-head">
+                <div>
+                    <span class="field-num">5.</span><h2 class="field-name">생활대책</h2>
+                    <p class="field-tagline">영업장 이전에 대한 대책</p>
+                </div>
+            </div>
+            <p class="field-desc">영업하시던 분께는 <strong>생활대책용지 공급</strong> 제도가 있습니다.<br>기준일 이전의 적법한 영업이 핵심 요건입니다.</p>
+            <ul class="field-items">
+                <li>기준일 이전 적법 영업 입증</li>
+                <li>생활대책용지 공급 대상자 확인</li>
+            </ul>
+        </article>
+
+        <article class="field-block" id="hyupyang">
+            <svg class="field-art" viewBox="0 0 90 80" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 70 L85 70" stroke="#A0813E" stroke-width="2"/><path d="M16 70 L16 48 L32 36 L48 48 L48 70" stroke="#193666" stroke-width="1.6"/><rect x="56" y="40" width="20" height="26" rx="2" stroke="#A0813E" stroke-width="1.6"/><path d="M60 48 L72 48 M60 54 L72 54 M60 60 L68 60" stroke="#A0813E" stroke-width="1.4"/></svg>
+            <div class="field-head">
+                <div>
+                    <span class="field-num">6.</span><h2 class="field-name">협의양도인</h2>
+                    <p class="field-tagline">협의 보상자에 대한 토지·주택 우선공급 제도</p>
+                </div>
+            </div>
+            <p class="field-desc">협의에 응해 양도하신 분께는 <strong>토지·주택 우선공급</strong> 혜택이 있습니다.<br>기준일과 기준면적 충족이 관건입니다.</p>
+            <ul class="field-items">
+                <li>기준일·기준면적 충족 확인</li>
+                <li>단독주택용지·아파트 우선공급 혜택 확인</li>
             </ul>
         </article>
 
@@ -1629,16 +1667,14 @@ nav.site-nav {
             <svg class="field-art" viewBox="0 0 90 80" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 70 L85 70" stroke="#A0813E" stroke-width="2"/><rect x="14" y="36" width="24" height="20" rx="2" stroke="#193666" stroke-width="1.6"/><rect x="52" y="44" width="24" height="20" rx="2" stroke="#A0813E" stroke-width="1.6"/><path d="M40 42 C46 38 50 38 55 41 M53 38 L56 41 L52 44" stroke="#A0813E" stroke-width="1.6"/><path d="M50 60 C44 64 40 64 35 61 M37 64 L34 61 L38 58" stroke="#193666" stroke-width="1.6"/></svg>
             <div class="field-head">
                 <div>
-                    <span class="field-num">5.</span><h2 class="field-name">협의양도·대토</h2>
-                    <p class="field-tagline">현금 대신 땅으로 받는 선택지</p>
+                    <span class="field-num">7.</span><h2 class="field-name">대토</h2>
+                    <p class="field-tagline">토지 보상금 대신 토지로 받는 제도</p>
                 </div>
             </div>
-            <p class="field-desc"><strong>협의양도인택지</strong>와 <strong>대토보상</strong> — 현금 대신 땅으로 받는 길이 있습니다.<br>신청 시기를 놓치면 선택지가 사라집니다.</p>
+            <p class="field-desc">현금 대신 <strong>사업지구 안의 토지</strong>로 보상받는 선택지입니다.<br>신청 요건과 함께 사업성을 따져보는 것이 중요합니다.</p>
             <ul class="field-items">
-                <li>협의양도인택지 공급 요건·절차 안내</li>
-                <li>대토보상 신청 요건 검토</li>
-                <li>전매 제한 등 유의사항 안내</li>
-                <li>협의 응낙 여부 판단 자문</li>
+                <li>대토 신청요건 검토</li>
+                <li>대토의 사업성 분석</li>
             </ul>
         </article>
 
@@ -1646,7 +1682,7 @@ nav.site-nav {
             <svg class="field-art" viewBox="0 0 90 80" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 70 L85 70" stroke="#A0813E" stroke-width="2"/><path d="M14 70 L14 48 L44 48 L44 70" stroke="#193666" stroke-width="1.6"/><path d="M44 70 L44 56 L76 56 L76 70" stroke="#A0813E" stroke-width="1.6" stroke-dasharray="4 4"/><path d="M58 56 L58 44 M58 48 C52 46 50 40 50 36 C56 38 58 42 58 48 M58 44 C64 42 66 36 66 32 C60 34 58 38 58 44" stroke="#193666" stroke-width="1.6"/></svg>
             <div class="field-head">
                 <div>
-                    <span class="field-num">6.</span><h2 class="field-name">기타 보상</h2>
+                    <span class="field-num">8.</span><h2 class="field-name">기타 보상</h2>
                     <p class="field-tagline">잔여지·영농·분묘까지, 놓치기 쉬운 권리들</p>
                 </div>
             </div>
@@ -1807,14 +1843,13 @@ nav.site-nav {
 
 <footer class="footer">
     <div class="footer-inner">
-        <span class="footer-mark-seal"><svg viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="26" fill="#193666"/><rect x="2" y="2" width="116" height="116" rx="24" fill="none" stroke="#C9AF74" stroke-width="3"/><path d="M60 22 L60 98 M22 60 L98 60" stroke="#FAF7F0" stroke-width="5" stroke-linecap="round"/><rect x="66" y="26" width="32" height="28" rx="5" fill="#C9AF74"/></svg></span>
         <span class="footer-mark-name">법률사무소 도연 토지보상센터</span>
 
         <!-- ※ 광고책임변호사 지정은 도연 측 최종 확인 -->
         <div class="footer-info">
             서울특별시 서초대로51길 24, 시온빌딩 5층<br>
             TEL: <a href="tel:01039612636">010-3961-2636</a> | EMAIL: <a href="mailto:lawpark2025@naver.com">lawpark2025@naver.com</a> <span style="font-size: 0.75rem; opacity: 0.6;">(이메일 무단수집 거부)</span><br>
-            공동대표변호사 박지영·권도연 | 광고책임변호사 박지영
+            대표 변호사 박지영·권도연 | 광고책임변호사 박지영
         </div>
         <div class="footer-divider"></div>
         <a class="footer-partner" href="https://doyeonlaw.co.kr/" target="_blank" rel="noopener noreferrer" aria-label="법률사무소 도연 홈페이지">
